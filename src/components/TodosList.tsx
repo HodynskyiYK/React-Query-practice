@@ -38,7 +38,7 @@ export const TodosList: React.FC = () => {
     }
 
     return (
-        <List sx={{ width: '100%', maxWidth: 1200, bgcolor: 'background.paper' }}>{
+        <List sx={{ width: '100%', maxWidth: 1200, bgcolor: 'background.paper', margin: '0 auto' }}>{
             todos?.length ? todos.map(todo => (
                 <TodoItem key={todo.id} todo={todo} />
             )) : (
